@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Website<span>Saya</span></div>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#artikel">Artikel</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+
+    <button id="darkMode">🌙</button>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="small-title">SELAMAT DATANG</p>
+        <h1>Temukan Cerita<br><span>Menarik di Sini</span></h1>
+        <p>
+            Website sederhana untuk menampilkan foto,
+            artikel, cerita, dan informasi yang ingin Anda bagikan.
+        </p>
+
+        <a href="#artikel" class="btn">Baca Artikel</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/foto1.jpg" alt="Foto utama">
+    </div>
+</section>
+
+<section class="section" id="galeri">
+    <div class="section-title">
+        <p>GALERI</p>
+        <h2>Foto Pilihan</h2>
+    </div>
+
+    <div class="gallery">
+        <div class="photo-card">
+            <img src="images/foto1.jpg" alt="Foto 1">
+        </div>
+
+        <div class="photo-card">
+            <img src="images/foto2.jpg" alt="Foto 2">
+        </div>
+
+        <div class="photo-card">
+            <img src="images/foto3.jpg" alt="Foto 3">
+        </div>
+
+        <div class="photo-card">
+            <img src="images/foto4.jpg" alt="Foto 4">
+        </div>
+
+        <div class="photo-card">
+            <img src="images/foto5.jpg" alt="Foto 5">
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <div>
+        <p class="small-title">TENTANG WEBSITE</p>
+        <h2>Tempat untuk berbagi cerita dan informasi.</h2>
+    </div>
+
+    <p>
+        Gunakan website ini untuk membagikan artikel, pengalaman,
+        berita, cerita perjalanan, dokumentasi, atau informasi lainnya.
+        Anda bebas mengganti teks dan foto sesuai kebutuhan.
+    </p>
+</section>
+
+<section class="section" id="artikel">
+
+    <div class="section-title">
+        <p>ARTIKEL</p>
+        <h2>Artikel Terbaru</h2>
+    </div>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari artikel..."
+        >
+    </div>
+
+    <div id="articleList" class="article-grid"></div>
+
+</section>
+
+<footer>
+    <div>
+        <h3>WebsiteSaya</h3>
+        <p>Tempat berbagi cerita dan informasi.</p>
+    </div>
+
+    <p>© 2026 WebsiteSaya. Semua hak dilindungi.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

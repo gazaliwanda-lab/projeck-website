@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Artikel</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Website<span>Saya</span></div>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="index.html#galeri">Galeri</a>
+        <a href="index.html#artikel">Artikel</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+
+    <button id="darkMode">🌙</button>
+</header>
+
+<main class="article-page">
+
+    <div id="articleDetail"></div>
+
+</main>
+
+<footer>
+    <p>© 2026 WebsiteSaya</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

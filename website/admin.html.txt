@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin - WebsiteSaya</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Website<span>Saya</span></div>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="index.html#artikel">Artikel</a>
+    </nav>
+</header>
+
+<main class="admin-container">
+
+    <div class="section-title">
+        <p>ADMIN</p>
+        <h1>Kelola Artikel</h1>
+    </div>
+
+    <form id="articleForm">
+
+        <input type="hidden" id="editId">
+
+        <label>Judul Artikel</label>
+        <input
+            type="text"
+            id="title"
+            placeholder="Masukkan judul artikel"
+            required
+        >
+
+        <label>Kategori</label>
+        <input
+            type="text"
+            id="category"
+            placeholder="Contoh: Berita"
+            required
+        >
+
+        <label>Nama Penulis</label>
+        <input
+            type="text"
+            id="author"
+            placeholder="Nama penulis"
+            required
+        >
+
+        <label>URL / Nama Foto</label>
+        <input
+            type="text"
+            id="image"
+            placeholder="Contoh: images/foto2.jpg"
+        >
+
+        <label>Isi Artikel</label>
+        <textarea
+            id="content"
+            rows="12"
+            placeholder="Tuliskan artikel Anda..."
+            required
+        ></textarea>
+
+        <div class="form-buttons">
+            <button type="submit" class="btn">
+                Simpan Artikel
+            </button>
+
+            <button
+                type="button"
+                class="btn secondary"
+                onclick="resetForm()"
+            >
+                Batal
+            </button>
+        </div>
+
+    </form>
+
+    <hr>
+
+    <h2>Daftar Artikel</h2>
+
+    <div id="adminArticles"></div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
